@@ -16,7 +16,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-to help people figure out if they have a migraine or a headache
+to help people figure out if they have a cold, flu or COVID-19
  
 Known Issues:
 results page will not display results
@@ -29,6 +29,12 @@ results page will not display results
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
+	
+<script>
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+</script>
 
 <!--These vars are the numbers that will be manipulated by the questions-->
 <script> 
@@ -154,7 +160,10 @@ results page will not display results
 	<div id="content" class="w3 container">
 		<p>Results</p>
 		<a  class = "w3-btn w3-black" onclick="resultsPage();"> Click here for results</a><!--this button calls the resultspage function which displays the results-->
-</div>			
+</div>	
+			<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY!</p>
+</footer>
 </div>		
 
 </body>
